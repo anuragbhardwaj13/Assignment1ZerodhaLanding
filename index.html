@@ -20,15 +20,44 @@
       </div>
     </header>
     <hr />
-    <div class="center-image">
+    <section class="center-image">
       <img src="assets/landing.png" alt="" srcset="" />
-    </div>
-    <div class="bottom">
+    </section>
+    <section class="bottom">
       <h1>Invest in everything</h1>
       <p>
         Online platform to invest in stocks, derivatives, mutual funds and more
       </p>
       <button class="btn">Sign up now</button>
-    </div>
+    </section>
+    <h1 style="text-align: center;font-weight: 600;font-size: 1.5rem;color: rgb(76, 76, 76);">Portfolio Return Calculator</h1>
+    <section class="return-calculator-section">
+      <div class="calc-top">
+        <div class="input-section">
+          <input
+            type="number"
+            name="capital"
+            id="capital"
+            placeholder="Capital"
+          />
+          <input type="number" name="years" id="years" placeholder="Years" />
+          <input
+            type="number"
+            name="interest"
+            id="interest"
+            placeholder="Interest"
+          />
+        </div>
+        <div class="output-section">
+          <p>Total Portfolio Returns</p>
+          <p id="return"></p>
+        </div>
+      </div>
+      <div class="calc-bottom">
+        <button id="calculate" ">Calculate</button>
+        <button id="reset" ">Reset</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
